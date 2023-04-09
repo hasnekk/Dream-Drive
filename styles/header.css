@@ -1,0 +1,96 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    height: 70px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 30%;
+    height: 100%;
+}
+
+.logo>img {
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    
+    width: 60px;
+    height: 65px;
+}
+
+.logo>p {
+    font-size: 25px;
+    font-weight: 7000;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.currentCategory {
+    font-size: 25px;
+    font-weight: 7000;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Bebas Neue', cursive;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 60%;
+    height: 100%;
+}
+
+.cartInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    margin-right: 1rem;
+
+    width: 10%;
+
+}
+
+.cartInfo img {
+    height: 30px;
+    min-width: 30px;
+    margin: 2px;
+}
+
+.cartInfo .cart {
+    position: relative;
+}
+
+.cartInfo .cart span {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    border-radius: 11px;
+    color: black;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0px 6px;
+    text-align: center;
+    height: 19px;
+    width: 7px;
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+.cartInfo a {
+    text-decoration: none;
+    cursor: pointer;
+}
