@@ -24,9 +24,11 @@
     margin-bottom: 10px;
 
     border: 3px solid white;
+
+    box-shadow: 2px 2px 14px white;
 }
 
-.categories .firstButton{
+.categories .firstButton {
     margin-top: 3rem;
 }
 

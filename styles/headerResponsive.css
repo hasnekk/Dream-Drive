@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+
+    header p {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    
+    .logo>img{
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+
+        width: 40px;
+        height: 55px;
+    }
+
+    .logo>p {
+       font-size: 17px;
+    }
+
+
+    .cartInfo img {
+        height: 30px;
+        min-width: 20px;
+    }
+
+}

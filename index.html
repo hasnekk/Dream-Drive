@@ -11,18 +11,20 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/nav.css">
 
+    <link rel="stylesheet" href="./styles/indexResponsive.css">
+    <link rel="stylesheet" href="./styles/headerResponsive.css">
+
     <!--za logo ime font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <script src="./scripts/index.js"></script>
-    
+    <script src="./scripts/data.js"></script>
 
 </head>
 
 <body>
-   
+
     <header>
 
         <div class="logo">
@@ -31,7 +33,7 @@
         </div>
 
         <div class="currentCategory">
-            <p>Lorem ipsum dolor sit.</p>
+
         </div>
 
         <div class="cartInfo">
@@ -39,7 +41,7 @@
             <a href="./cart.html">
                 <div class="cart">
                     <img src="./images/logos/cart logo.webp" alt="cart image">
-                    <span>1</span>
+                    <span id="headerCart"></span>
                 </div>
             </a>
         </div>
@@ -47,6 +49,7 @@
     </header>
 
 
+    <!--za veće ekrane-->
     <div class="container">
 
 
@@ -54,50 +57,15 @@
         <div class="sideBar">
             <nav class="categories">
 
-                <button class="firstButton">
-                    <img src="./images/logos/audiLogo.jpg" alt="">
-                    <p>AUDI</p>
-                </button>
-                <button>
-                    <img src="./images/logos/bmwLogo.jpg" alt="">
+                <!-- <button>
+                    <img src="./images/logos/bmwLogo.jpg" alt="logo">
                     <p>BMW</p>
-                </button>
-                <button>
-                    <img src="./images/logos/mercedesLogo.jpg" alt="">
-                    <p>MERCEDES</p>
-                </button>
-                <button>
-                    <img src="./images/logos/bentleyLogo.jpg" alt="">
-                    <p>BENTLEY</p>
-                </button>
-                <button>
-                    <img src="./images/logos/RollsRoyceLogo.png" alt="">
-                    <p>ROLLS ROYCE</p>
-                </button>
-                <button>
-                    <img src="./images/logos/LamborghiniLogo.jpg" alt="">
-                    <p>LAMBORGHINI</p>
-                </button>
-                <button>
-                    <img src="./images/logos/MaseartiLogo.jpg" alt="">
-                    <p>MASERATI</p>
-                </button>
-                <button>
-                    <img src="./images/logos/FerrariLogo.jpg" alt="">
-                    <p>FERRARI</p>
-                </button>
-                <button>
-                    <img src="./images/logos/VolvoLogo.jpg" alt="">
-                    <p>VOLVO</p>
-                </button>
-                <button>
-                    <img src="./images/logos/BugattiLogo.jpg" alt="">
-                    <p>BUGATTI</p>
-                </button>
+                </button> -->
+
 
             </nav>
 
-            <hr >
+            <hr>
 
             <div class="newsLetter">
 
@@ -107,7 +75,7 @@
 
                 <div class="news">
 
-                    <div class="newNews">
+                    <!-- <div class="newNews">
 
                         <p class="newsTitle">NEW AVENTADOR</p>
 
@@ -115,74 +83,22 @@
                             <img src="./images/Category products/812 Competizione.jpg" alt="newsImage">
                         </div>
 
-                        <p class="newsInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nostrum vel
+                        <p class="newsInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nostrum
+                            vel
                             laborum sed rerum aliquid blanditiis voluptatibus error suscipit ex.
                             <a href="#">More info</a>
                         </p>
 
-                    </div>
-
-                    <div class="newNews">
-
-                        <p class="newsTitle">NEW AVENTADOR</p>
-
-                        <div class="newsImage">
-                            <img src="./images/Category products/812 Competizione.jpg" alt="newsImage">
-                        </div>
-
-                        <p class="newsInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nostrum vel
-                            laborum sed rerum aliquid blanditiis voluptatibus error suscipit ex.
-                            <a href="#">More info</a>
-                        </p>
-
-                    </div>
-
-                    <div class="newNews">
-
-                        <p class="newsTitle">NEW AVENTADOR</p>
-
-                        <div class="newsImage">
-                            <img src="./images/Category products/812 Competizione.jpg" alt="newsImage">
-                        </div>
-
-                        <p class="newsInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sunt nihil
-                            cumque sapiente nisi mollitia atque distinctio delectus cupiditate vero a consequuntur et,
-                            debitis ab veritatis aliquid exercitationem, maiores officiis voluptatum vitae fugit
-                            molestias. Delectus similique aperiam ratione explicabo voluptate veritatis fugit repellat
-                            harum fugiat? Consequuntur ipsa, ea aut neque cum possimus deleniti aspernatur. Sapiente
-                            quam aliquam accusantium libero facere voluptatibus molestiae commodi quia eius, consequatur
-                            labore ut nemo ea repudiandae tempore in id reiciendis nulla laboriosam error magni
-                            consectetur, totam nobis. Cupiditate quas perferendis recusandae perspiciatis natus sunt
-                            excepturi eligendi ipsum omnis magni. Sequi impedit illum totam illo deleniti!
-                            <a href="#">More info</a>
-                        </p>
-
-                    </div>
-
-
-                    <div class="newNews">
-
-                        <p class="newsTitle">NEW AVENTADOR</p>
-
-                        <div class="newsImage">
-                            <img src="./images/Category products/812 Competizione.jpg" alt="newsImage">
-                        </div>
-
-                        <p class="newsInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nostrum vel
-                            laborum sed rerum aliquid blanditiis voluptatibus error suscipit ex.
-                            <a href="#">More info</a>
-                        </p>
-
-                    </div>
+                    </div> -->
 
                 </div>
 
-                <button><span>Subscribe </span></button>
+                <button id="subscribeButton"><span>Subscribe </span></button>
 
-     
+
 
                 <div class="contactInfo">
-                    
+
                     <p>CONTACT</p>
 
                     <div class="contactInfoRender">
@@ -195,7 +111,7 @@
                         <div class="number">
                             <div class="phoneImage"><img src="./images/logos/phoneIcon.png" alt="phone logo"></div>
                             <p>01 2067/0267</p>
-     
+
                         </div>
 
                         <a href="https://goo.gl/maps/TWQQ5422kXmFUWFn8" target="_blank">
@@ -216,28 +132,25 @@
 
             <div class="mainHeader">
 
-                <img src="./images/CategoryHeaderImages/Audi header.jpg" alt="category header">
+                <!-- <video autoplay loop muted poster="./images/CategoryHeaderImages/Audi header.jpg">
+                    <source src="./images/videoHeader/rollsRoyceVideo.mp4" type="video/mp4">
+                </video>
 
                 <div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt dolores vero nam voluptatem natus
-                        earum quasi sapiente, magni velit est expedita adipisci quos nulla inventore ex dolorem tempore
-                        commodi cupiditate? Minus nam ratione blanditiis laudantium odio nulla nemo. Soluta vero
-                        quisquam eaque ad incidunt quos consectetur dicta adipisci ut. Laborum fugiat veritatis odit
-                        facere nam nemo debitis reiciendis cupiditate quisquam ducimus, ipsam quas cum ut consequatur
-                        animi doloribus, nobis magnam soluta aspernatur repellendus fugit aperiam vitae veniam ullam.
-                        Architecto natus provident earum explicabo atque rerum libero nesciunt dolorum, saepe totam hic
-                        facere accusantium cumque odit ratione temporibus. Repellendus, numquam ipsum?
-                        More on audi history <a href="https://en.wikipedia.org/wiki/Audi" target="_blank">here</a>.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nisi dolor natus distinctio
+                        nesciunt dolorum animi et vel provident minima unde error molestias amet eveniet,
+                        consequatur
+                        expedita. Voluptas, esse magni?
                     </p>
-                </div>
+                </div> -->
 
             </div>
 
-   
+
             <div class="products">
 
-
+                <!--                 
                 <div class="product">
                     <div class="productImage">
                         <img src="./images/Category products/audi q2.jpg" alt="product image">
@@ -248,193 +161,7 @@
                     </div>
                     <p class="name">Audi Q2 2023</p>
                     <p>price: 40 000€</p>
-                </div>
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-                <div class="product">
-                    <div class="productImage">
-                        <img src="./images/Category products/audi q2.jpg" alt="product image">
-                        <span>1</span>
-                        <button>
-                            <img src="./images/logos/cart logo.webp" alt="cart image">
-                        </button>
-                    </div>
-                    <p class="name">Audi Q2 2023</p>
-                    <p>price: 40 000€</p>
-                </div>
-
-
+                </div> -->
 
 
             </div>
@@ -443,6 +170,126 @@
 
 
     </div>
+
+
+    <!--za manje ekrane-->
+    <div class="containerResponsive">
+
+        <div class="mainHeader2">
+
+            <button id="menuBtn"><img src="./images/logos/menuIcon.png" alt="menu icon"></button>
+
+            <!-- 
+            <video autoplay loop muted poster="./images/CategoryHeaderImages/Audi header.jpg">
+                <source src="./images/videoHeader/rollsRoyceVideo.mp4" type="video/mp4">
+            </video>
+
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum architecto iste
+                    assumenda, harum non
+                    ratione explicabo ullam sunt delectus quasi cumque suscipit est? Mollitia, voluptatibus
+                    repellendus
+                    ut aspernatur in blanditiis.
+                </p>
+            </div> -->
+
+        </div>
+
+        <nav class="categoriesResponsive">
+
+            <!-- <button class="btnInMenu">
+                AUDI
+            </button> -->
+
+
+        </nav>
+
+        <div class="products2">
+
+            <!-- <div class="product2">
+                <div class="productImage2">
+                    <img src="./images/Category products/audi q2.jpg" alt="product image">
+                    <span>1</span>
+                    <button>
+                        <img src="./images/logos/cart logo.webp" alt="cart image">
+                    </button>
+                </div>
+                <p class="name2">Audi Q2 2023</p>
+                <p>price: 40 000€</p>
+            </div> -->
+
+        </div>
+
+
+
+        <div class="newsLetter">
+
+            <div class="titleHeader">
+                <p>Latest News</p>
+            </div>
+
+            <div class="news2">
+
+                <!-- <div class="newNews2">
+
+                    <p class="newsTitle2">NEW AVENTADOR</p>
+
+                    <div class="newsImage2">
+                        <img src="./images/Category products/812 Competizione.jpg" alt="newsImage">
+                    </div>
+
+                    <p class="newsInfo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                        nostrum
+                        vel
+                        laborum sed rerum aliquid blanditiis voluptatibus error suscipit ex.
+                        <a href="#">More info</a>
+                    </p>
+
+                </div> -->
+
+
+
+
+            </div>
+
+            <button><span>Subscribe </span></button>
+
+
+
+        </div>
+
+
+
+        <div class="contactInfo">
+
+            <p>CONTACT</p>
+
+            <div class="contactInfoRender">
+
+                <div class="gmail">
+                    <div class="gmailImage"><img src="./images/logos/gmailIcon.png" alt="gmail logo"></div>
+                    <p>DreamRide@gmail.com</p>
+                </div>
+
+                <div class="number">
+                    <div class="phoneImage"><img src="./images/logos/phoneIcon.png" alt="phone logo"></div>
+                    <p>01 2067/0267</p>
+
+                </div>
+
+                <a href="https://goo.gl/maps/TWQQ5422kXmFUWFn8" target="_blank">
+                    <div class="locationImage"><img src="./images/logos/locationIcon.png" alt="location logo">
+                    </div>
+                    <p>Zagreb</p>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
 
 </body>
 
