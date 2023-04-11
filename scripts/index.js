@@ -1,3 +1,5 @@
+const logoButton = document.getElementById("logoButton");
+
 //za menu u small screnu start
 const menuBtn = document.getElementById("menuBtn");
 const menuCategories = document.querySelector(".categoriesResponsive");
@@ -108,7 +110,12 @@ function switches() {
                 document.querySelector(".mainHeader").appendChild(video);
                 document.querySelector(".mainHeader").appendChild(div);
 
-
+                //ovo zapocinje animaciju voznje autica start
+                logoButton.classList.add("animationForLogo");
+                setTimeout(function () {
+                    logoButton.classList.remove("animationForLogo");
+                }, 2000);
+                //ovo zapocinje animaciju voznje autica end
 
                 //render products
                 document.querySelector(".products").innerHTML = "";
@@ -178,7 +185,11 @@ function switches() {
                     divProd.appendChild(pProductPrice);
 
                     document.querySelector(".products").appendChild(divProd);
+
+
+
                 }
+
             }
         );
 
@@ -256,6 +267,13 @@ function switchSmallScreen() {
         button.appendChild(p);
 
         button.addEventListener("click", () => {
+
+            //ovo zapocinje animaciju voznje autica start
+            logoButton.classList.add("animationForLogo");
+            setTimeout(function () {
+                logoButton.classList.remove("animationForLogo");
+            }, 2000);
+            //ovo zapocinje animaciju voznje autica end
 
             //close menu pop up
             menuCategories.style.display = "none";

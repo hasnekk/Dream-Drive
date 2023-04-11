@@ -415,3 +415,16 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: red;
 }
+
+@keyframes logoMove {
+    from {}
+
+    to {
+        transform: translateX(20vw);
+    }
+}
+
+.animationForLogo {
+    animation-name: logoMove;
+    animation-duration: 1.9s;
+}
