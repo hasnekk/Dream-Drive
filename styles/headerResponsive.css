@@ -4,17 +4,19 @@
         font-size: 15px;
         white-space: nowrap;
     }
-    
-    .logo>img{
+
+
+
+    .logo button {
         margin-left: 1rem;
         margin-right: 0.5rem;
 
-        width: 40px;
+        width: 50px;
         height: 55px;
     }
 
     .logo>p {
-       font-size: 17px;
+        font-size: 1.2rem;
     }
 
 

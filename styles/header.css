@@ -4,6 +4,13 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    background-color: white;
+    z-index: 999;
+
     height: 70px;
     width: 100%;
 }
@@ -18,13 +25,38 @@ header {
     height: 100%;
 }
 
-.logo>img {
+@keyframes logoMove {
+    from {}
+
+    to {
+        transform: translateX(20vw);
+    }
+}
+
+
+.logo button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 65px;
     margin-left: 1.5rem;
     margin-right: 1rem;
 
-    width: 60px;
-    height: 65px;
 }
+
+.logo button>img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo button:hover {
+    transform: scale(1.1);
+}
+
 
 .logo>p {
     font-size: 25px;
