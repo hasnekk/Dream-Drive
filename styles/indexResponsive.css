@@ -1,4 +1,6 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
+
+
 
     .container {
         display: none;
@@ -30,11 +32,24 @@
         height: 100%;
     }
 
+    @keyframes mainHeaderIn {
+        from {
+            opacity: 0;
+            transform: translateX(-200px);
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
     .mainHeader2>video {
         width: 100%;
-        height: 100%;
+        height: auto;
         object-fit: cover;
         z-index: -1;
+
+        animation: mainHeaderIn 2s ease-in-out;
     }
 
     .mainHeader2>div {
@@ -44,27 +59,39 @@
 
         background-color: rgba(0, 0, 0, 0.5);
 
-        width: 30%;
+        width: 37%;
         max-height: max-content;
+
+        animation: mainHeaderIn 2s ease-in-out;
     }
 
     .mainHeader2 p {
-        font-size: 0.6rem;
+        font-size: 0.4rem;
         font-weight: 600;
         color: gold;
 
     }
 
 
+    @keyframes menuIn {
+        from {
+            opacity: 0;
+            transform: translateX(-200px);
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
 
     .categoriesResponsive {
         display: none;
         position: fixed;
-        top: 70px;
+        top: 0px;
         left: 0;
         width: 100%;
         height: 100vh;
-
 
         flex-direction: column;
         justify-content: center;
@@ -74,8 +101,20 @@
 
         z-index: 1;
 
+        animation: menuIn 0.6s ease-in-out;
+
     }
 
+    @keyframes menuItemsIn {
+        from {
+            opacity: 0;
+            transform: translateX(-200px);
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
 
     .categoriesResponsive>button {
         background-color: rgba(213, 213, 213, 0);
@@ -88,6 +127,8 @@
 
         border: 3px solid black;
         color: white;
+
+        animation: menuItemsIn 1s ease-in-out;
     }
 
     #menuBtn {
@@ -111,15 +152,30 @@
         grid-template-columns: 1fr 1fr;
     }
 
+
+    @keyframes productsIn {
+        from {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
     .product2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         row-gap: 3px;
 
         margin: 20px;
+
+        border: 4px double goldenrod;
+
+        animation: productsIn 1s ease-in-out;
     }
 
     .productImage2 {
@@ -295,11 +351,24 @@
         height: 100%;
     }
 
+    @keyframes mainHeaderIn {
+        from {
+            opacity: 0;
+            transform: translateX(-200px);
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
     .mainHeader2>video {
         width: 100%;
         height: 100%;
         object-fit: cover;
         z-index: -1;
+
+        animation: mainHeaderIn 2s ease-in-out;
     }
 
     .mainHeader2>div {
@@ -311,6 +380,8 @@
 
         width: 30%;
         max-height: max-content;
+
+        animation: mainHeaderIn 2s ease-in-out;
     }
 
     .mainHeader2 p {
@@ -321,6 +392,16 @@
     }
 
 
+    @keyframes menuIn {
+        from {
+            opacity: 0;
+            transform: translateX(-200px);
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
 
     .categoriesResponsive {
         display: none;
@@ -339,8 +420,19 @@
 
         z-index: 1;
 
+        animation: menuIn 0.6s ease-in-out;
     }
 
+    @keyframes menuItemsIn {
+        from {
+            opacity: 0;
+            transform: translateX(-200px);
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
 
     .categoriesResponsive>button {
         background-color: rgba(213, 213, 213, 0);
@@ -353,6 +445,8 @@
 
         border: 3px solid black;
         color: white;
+
+        animation: menuItemsIn 1s ease-in-out;
     }
 
     #menuBtn {
@@ -374,6 +468,19 @@
 
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+
+    }
+
+    @keyframes productsIn {
+        from {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     .product2 {
@@ -385,6 +492,8 @@
         margin: 20px;
 
         border: 5px inset goldenrod;
+
+        animation: productsIn 1s ease-in-out;
     }
 
     .productImage2 {
@@ -527,18 +636,18 @@
         transition: all 1s;
     }
 
-    .contactInfo > p{
+    .contactInfo>p {
         font-size: 3rem;
     }
 
     .gmail p,
     .number p,
-    .contactInfoRender>a p{
+    .contactInfoRender>a p {
         font-size: 2rem;
     }
 }
 
-@media only screen and (min-width: 901px) and (max-width: 1126px) {
+@media only screen and (min-width: 901px) and (max-width: 1300px) {
     .productImage {
         width: 100%;
         height: 230px;
