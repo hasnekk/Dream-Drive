@@ -84,7 +84,7 @@ const data = {
                     "name": "CONTINENTAL GT RANGE", "image": "./images/Category products/CONTINENTAL GT RANGE.jpg", "price": "202 500€"
                 },
                 {
-                    "name": "CONTINENTAL GTC RANGE", "image": "./images/Category products/CONTINENTAL GT RANGE.jpg", "price": "238 000€"
+                    "name": "CONTINENTAL GTC RANGE", "image": "./images/Category products/CONTINENTAL GTC RANGE.jpg", "price": "238 000€"
                 },
                 {
                     "name": "FLYING SPUR RANGE", "image": "./images/Category products/FLYING SPUR RANGE.jpg", "price": "227 000€"
@@ -111,7 +111,7 @@ const data = {
                     "name": "GHOST", "image": "./images/Category products/GHOST.jpg", "price": "400 000€"
                 },
                 {
-                    "name": "PHANTOM EXTENDED", "image": "./images/Category products/PHANTOM EXTENDED2.jpg", "price": "580 000€"
+                    "name": "PHANTOM EXTENDED", "image": "./images/Category products/PHANTOM EXTENDED.jpg", "price": "580 000€"
                 },
                 {
                     "name": "GHOST EXTENDED", "image": "./images/Category products/GHOST EXTENDED.jpg", "price": "443 000€"
@@ -234,7 +234,8 @@ const data = {
                     "name" : "Bugatti Veyron", "image" : "./images/Category products/Bugatti Veyron.jpg", "price" : "1 900 000€"
                 },
                 { 
-                    "name" : "Bugatti Chiron Sport ‘Les Legendes Du Ciel’", "image" : "./images/Category products/Bugatti Chiron Sport ‘Les Legendes Du Ciel’.jpg", "price" : "2 880 000€"
+                    "name" : "Bugatti Chiron Sport ‘Les Legendes Du Ciel’", "image" : "./images/Category products/bugattiTate.jpg", "price" : "2 880 000€"
+                    //Bugatti Chiron Sport ‘Les Legendes Du Ciel’.jpg
                 },
                 { 
                     "name" : "Bugatti Bolide", "image" : "./images/Category products/Bugatti Bolide.jpg", "price" : "4 000 000€"
