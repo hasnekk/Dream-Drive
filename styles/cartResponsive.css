@@ -1,0 +1,73 @@
+@media only screen and (max-width:552px) {
+
+    .contactInfoRender {
+        flex-direction: column;
+    }
+
+    .gmail,
+    .number,
+    .contactInfo a {
+        justify-content: center;
+    }
+
+    .paragrafInContact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width:670px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .cartItems {
+        width: 100%;
+    }
+
+    .cartItem {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .itemQuantity {
+        width: 100%;
+        margin: 0;
+    }
+
+    .price {
+        position: unset;
+        padding-top: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:950px) {
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cartItems {
+        width: 90%;
+    }
+
+    .price>.priceCombined,
+    .price>.perItem {
+        font-size: 1.2rem;
+    }
+
+    .wrapperPayment {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+}
