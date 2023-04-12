@@ -1,5 +1,17 @@
 @media only screen and (max-width:552px) {
 
+    /*empty cart start*/
+    .emptyCartImg {
+        width: 90% !important;
+    }
+
+    .emptyCart p {
+        font-size: 0.9rem !important;
+        font-weight: 700;
+    }
+
+    /*empty cart end*/
+
     .contactInfoRender {
         flex-direction: column;
     }
@@ -20,6 +32,18 @@
 }
 
 @media only screen and (max-width:670px) {
+
+    /*empty cart start*/
+    .emptyCartImg {
+        width: 70%;
+        height: 50vh;
+    }
+
+    .emptyCart p {
+        font-size: 1.7rem;
+    }
+
+    /*empty cart end*/
 
     .container {
         width: 94%;

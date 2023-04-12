@@ -43,6 +43,7 @@ html {
     color: red;
     font-size: 2rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
 }
 
 .sideBar .news {
@@ -417,10 +418,12 @@ html {
 }
 
 @keyframes logoMove {
-    from {}
+    from {
+        transform: translateX(0);
+    }
 
     to {
-        transform: translateX(20vw);
+        transform: translateX(100vw);
     }
 }
 

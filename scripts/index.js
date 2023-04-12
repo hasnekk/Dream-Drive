@@ -33,11 +33,15 @@ subscribeButton.addEventListener("click", () => alert("You are subscribed"));
 let jsonStringLoaded = localStorage.getItem("cartItems");
 let cart = new Map(JSON.parse(jsonStringLoaded));
 
+//key = ime porizvoda
+// value = objekt:  -count
+//                  -price
+//                  -img
 
 function numOfElementsInCart() {
     let num = 0;
     for (let [key, value] of cart) {
-        num += value;
+        num += value.count;
     }
     return num;
 }
@@ -132,19 +136,32 @@ function switches() {
                     imgProduct.alt = "product image";
 
                     const span = document.createElement('span');
-                    span.textContent = cart.get(products[j]["name"]);
+
+                    if (typeof cart.get(products[j]["name"]) === 'undefined') {
+                        span.textContent = 0;
+                    } else {
+                        span.textContent = cart.get(products[j]["name"]).count;
+                    }
+
                     if (span.textContent == 0) span.style.display = "none";
 
                     const buttonCart = document.createElement('button');
                     buttonCart.addEventListener("click", () => {
+
+                        let cartObj = {};
+
                         if (cart.has(products[j]["name"])) {
-                            cart.set(products[j]["name"], cart.get(products[j]["name"]) + 1);
+                            cartObj = cart.get(products[j]["name"]);
+                            cartObj.count++;
+                            cart.set(products[j]["name"], cartObj);
                         } else {
-                            cart.set(products[j]["name"], 1);
+                            cartObj.img = products[j]["image"];
+                            cartObj.price = products[j]["price"];
+                            cartObj.count = 1;
+                            cart.set(products[j]["name"], cartObj);
                         }
-
-
-                        span.textContent = cart.get(products[j]["name"]);
+                        
+                        span.textContent = cartObj.count;
 
                         if (span.style.display === 'none' && span.textContent != 0) {
                             span.style.display = "flex";
@@ -173,7 +190,8 @@ function switches() {
                     pProduct.textContent = products[j]["name"];
 
                     const pProductPrice = document.createElement('p');
-                    pProductPrice.textContent = products[j]["price"];
+                    let priceToPay = products[j]["price"];
+                    pProductPrice.textContent = priceToPay + "€";
 
                     buttonCart.appendChild(imgCart);
                     divProdImg.appendChild(imgProduct);
@@ -321,19 +339,32 @@ function switchSmallScreen() {
                 imgProduct.alt = "product image";
 
                 const span = document.createElement('span');
-                span.textContent = cart.get(products[j]["name"]);
+
+                if (typeof cart.get(products[j]["name"]) === 'undefined') {
+                    span.textContent = 0;
+                } else {
+                    span.textContent = cart.get(products[j]["name"]).count;
+                }
+
                 if (span.textContent == 0) span.style.display = "none";
 
                 const buttonCart = document.createElement('button');
                 buttonCart.addEventListener("click", () => {
+
+                    let cartObj = {};
+
                     if (cart.has(products[j]["name"])) {
-                        cart.set(products[j]["name"], cart.get(products[j]["name"]) + 1);
+                        cartObj = cart.get(products[j]["name"]);
+                        cartObj.count++;
+                        cart.set(products[j]["name"], cartObj);
                     } else {
-                        cart.set(products[j]["name"], 1);
+                        cartObj.img = products[j]["image"];
+                        cartObj.price = products[j]["price"];
+                        cartObj.count = 1;
+                        cart.set(products[j]["name"], cartObj);
                     }
 
-
-                    span.textContent = cart.get(products[j]["name"]);
+                    span.textContent = cartObj.count;
 
                     if (span.style.display === 'none' && span.textContent != 0) {
                         span.style.display = "flex";
@@ -362,7 +393,8 @@ function switchSmallScreen() {
                 pProduct.textContent = products[j]["name"];
 
                 const pProductPrice = document.createElement('p');
-                pProductPrice.textContent = products[j]["price"];
+                let priceToPay = products[j]["price"];
+                pProductPrice.textContent = priceToPay + "€";
 
                 buttonCart.appendChild(imgCart);
                 divProdImg.appendChild(imgProduct);

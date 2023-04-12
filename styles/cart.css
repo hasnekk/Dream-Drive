@@ -91,7 +91,7 @@ header {
 
 .container {
     display: flex;
-    /*display: none;*/
+    display: none;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
