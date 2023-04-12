@@ -72,7 +72,7 @@ function createProduct(key, value) {
     cartItemDiv.classList.add("cartItem");
 
     //itemInfo
-    const cartItemInfo = document.createElement('div');D
+    const cartItemInfo = document.createElement('div');
     cartItemInfo.classList.add("itemInfo");
 
     const cartItemDivImg = document.createElement('div');
