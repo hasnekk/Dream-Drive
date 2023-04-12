@@ -105,10 +105,11 @@ header {
 .cartInfo .cart span {
     display: none;
     align-items: center;
+    justify-content: center;
     background-color: orange;
     border-radius: 11px;
     color: black;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 600;
     padding: 0px 6px;
     text-align: center;

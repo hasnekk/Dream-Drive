@@ -14,9 +14,8 @@
         justify-content: center;
         align-items: center;
         background-color: rgba(56, 53, 53, 0.6);
+        background-color: white;
         overflow: hidden;
-
-
     }
 
     .mainHeader2 {
@@ -152,7 +151,6 @@
         grid-template-columns: 1fr 1fr;
     }
 
-
     @keyframes productsIn {
         from {
             opacity: 0;
@@ -249,6 +247,11 @@
 
     }
 
+    .titleHeader>p {
+        color: black;
+        text-decoration: underline overline #FF3028;
+    }
+
     .news2 {
         display: flex;
         flex-direction: column;
@@ -333,6 +336,7 @@
         justify-content: center;
         align-items: center;
         background-color: rgba(56, 53, 53, 0.6);
+        background-color: white;
         overflow: hidden;
 
 
@@ -567,6 +571,11 @@
 
     }
 
+    .titleHeader>p {
+        color: black;
+        text-decoration: underline overline #FF3028;
+    }
+
     .news2 {
         display: flex;
         flex-direction: column;
@@ -652,6 +661,62 @@
         width: 100%;
         height: 230px;
         position: relative;
+    }
+}
+
+@media only screen and (min-width: 2001px) {
+
+    .categories>button {
+        width: 350px;
+        height: 100px;
+    }
+
+    .mainHeader div {
+        width: 500px;
+    }
+
+    .mainHeader div p {
+        font-size: 1.6rem;
+    }
+
+    .contactInfo p {
+        font-size: 2rem;
+    }
+
+    .contactInfo>p {
+        font-size: 3rem;
+    }
+
+    .titleHeader {
+        font-size: 3rem;
+    }
+
+    .newsTitle {
+        font-size: 2rem;
+    }
+
+    .newsInfo {
+        font-size: 1.8rem;
+    }
+
+    .newsInfo>a {
+        font-size: 1.6rem;
+    }
+
+    #subscribeButton {
+        font-size: 2rem;
+    }
+
+    .newsLetter>button span::after {
+        font-size: 2rem;
+    }
+
+    .newsLetter>button:hover span {
+        padding-right: 50px;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
 }
